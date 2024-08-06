@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome to Spark TV</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f2f2f2;
+		}
+		
+		.container {
+			max-width: 1200px;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+			border-bottom: 1px solid #444;
+		}
+		
+		header h1 {
+			margin: 0;
+		}
+		
+		main {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 20px;
+		}
+		
+		.hero {
+			background-image: linear-gradient(to bottom, #333, #555);
+			background-size: 100% 200px;
+			background-position: 0% 100%;
+			height: 200px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #fff;
+		}
+		
+		.hero h2 {
+			margin: 0;
+		}
+		
+		.hero p {
+			margin: 10px 0;
+		}
+		
+		.hero button {
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		
+		.features {
+			margin-top: 20px;
+		}
+		
+		.features h2 {
+			margin-top: 0;
+		}
+		
+		.features ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		.features li {
+			margin-bottom: 10px;
+		}
+		
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>Welcome to Spark TV</h1>
+		</header>
+		<main>
+			<section class="hero">
+				<h2>Experience the best of TV</h2>
+				<p>Enjoy live sports, movies, and TV shows in HD</p>
+				<button>Start Watching</button>
+			</section>
+			<section class="features">
+				<h2>Features</h2>
+				<ul>
+					<li>Live TV</li>
+					<li>On-demand movies and shows</li>
+					<li>HD quality</li>
+					<li>Multi-device support</li>
+				</ul>
+			</section>
+		</main>
+		<footer>
+			<p>&copy; 2023 Spark TV</p>
+		</footer>
+	</div>
+	<script>
+		document.querySelector('button').addEventListener('click', function() {
+			alert('Welcome to Spark TV!');
+		});
+	</script>
+</body>
+</html>
