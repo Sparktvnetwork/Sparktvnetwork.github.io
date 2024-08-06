@@ -89,7 +89,7 @@
 		</div>
 	</div>
 	<script>
-		// Initialize Firebase
+	// Initialize Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyBpe9GjbBhpDpTBJPXq-A9DmVaC1wLl5l4",
   authDomain: "sparktv-81008.firebaseapp.com",
@@ -112,7 +112,10 @@ $('.tab').click(function() {
 });
 
 // Add Firebase Auth event listeners
-firebase.auth().onAuthStateChanged(user => {
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
+
+const auth = getAuth();
+onAuthStateChanged(auth, (user) => {
   if (user) {
     // User is signed in, show tabs
     $('.tab-content').show();
@@ -121,7 +124,6 @@ firebase.auth().onAuthStateChanged(user => {
     window.location.href = 'login.html';
   }
 });
-
 </script>
 </body>
 </html>
